@@ -1,0 +1,45 @@
+@import "project.less";
+
+.reset();
+
+.wrapper{
+    .wrapper();
+}
+
+
+.debugGrid{
+    .debug(rgba(0, 0, 0, 0.2), 1px solid #f90)
+}
+
+
+body{
+    background: url(../img/background.png)  top no-repeat;      
+    font-family: "OpenSans-Light";
+    color:@color_white;
+}
+
+.header{
+    background-color: @color_header;
+     .header_wrapper{
+        .row-flex();
+        .wrapper();
+         justify-content: space-between; 
+         .logo{
+            .col();
+         }
+         
+         .meniu{
+            .col();
+            .size(6);
+             ul{
+                 float: left;
+                 li{
+                     display: inline;
+                 }
+             }
+             .button{
+                 float: right;
+             }
+         }
+    }
+}
